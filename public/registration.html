@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Requester Registration</title>
+ 
+    <!-- <style>
+        .required {color: red; }
+    </style> -->
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- <script src="js/scripts.js"></script> -->
+  </head>
+  <body>
+
+<nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">
+    iCrowdTask
+  </a>
+</nav>
+    <div class="row">
+    <div class="col-md-6 offset-md-3 col-sm-10 offset-sm-1 content">
+        <h2>Requester Registration</h2>
+        <br>
+        <h4>Create an iCrowdTask Account</h4>
+        <br>    
+        <a class="btn btn-outline-primary col-sm-2 offset-sm-9 margin-btn" href="http://localhost:5000/login.html" role="button">Login</a>      
+   </div>
+    </div>
+        
+<div class="row">
+    <div class="col-md-6 offset-md-3 col-sm-10 offset-sm-1 border border-primary rounded border-form" >
+       <form action="/registration" method="POST">
+         
+            <div class="form-group">
+              <label for="ControlSelect">Country of residence <i class="required">*</i></label>
+              <select class="form-control" id="CountrySelect" name="Country">
+              </select>
+            </div>        
+            
+          <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                <label for="firstNameGrInput">First name<i class="required">*</i></label>
+                <input type="text" class="form-control" id="firstNameGrInput" name="FirstName" placeholder="Enter First name">
+                </div>
+            </div>
+                <div class="col-md-6 ">
+                    <div class="form-group">
+                    <label for="lastNameGrInput">Last name<i class="required">*</i></label>
+                    <input type="text" class="form-control" id="lastNameGrInput" name="LastName" placeholder="Enter Last name"></div>
+                </div>
+            </div>    
+             <div class="form-group">
+              <label for="emailControl">Email address <i class="required">*</i></label>
+              <input type="email" class="form-control" id="emailControl" name="Email" placeholder="name@example.com">
+            </div>
+            <div class="form-group">
+                <label for="inputPassword4">Password<i class="required">*</i></label>
+                <input type="password" class="form-control" id="inputPassword4" name="password" placeholder="Password">
+              </div>
+            <div class="form-group">
+            <label for="inputPassword5">Confirm Password<i class="required">*</i></label>
+            <input type="password" class="form-control" id="inputPassword5" name="passwordConfirmation" placeholder="Confirm Password">
+            </div>
+            <div class="form-group">
+                <label for="AddressGrInput">Address<i class="required">*</i></label>
+                <input type="text" class="form-control" id="AddressGrInput" name="AddressLine1" placeholder="Address Line 1"></div>
+                <div class="form-group">                 
+                <input type="text" class="form-control" id="AddressGrInput2" name="AddressLine2" placeholder="Address Line 2"></div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                    <label for="CityGrInput">City<i class="required">*</i></label>
+                    <input type="text" class="form-control" id="CityGrInput" name="City" placeholder="Enter CIty">
+                    </div>
+                </div>
+                    <div class="col-md-6 ">
+                    <div class="form-group">
+                    <label for="StateGrInput">State, Province or Region<i class="required">*</i></label>
+                    <input type="text" class="form-control" id="StateGrInput" name="State" placeholder="Enter State, Province or Region"></div>
+                    </div>
+            </div>
+                <div class="form-group">
+                    <label for="PostalCodeInput">ZIP / Postal Code</label>
+                    <input type="text" class="form-control" id="PostalCodeInput" name="Postcode" placeholder="Enter Postcode or ZIP">
+                </div>                
+                <div class="form-group">
+                    <label for="MobileInput">Mobile phone number</label>
+                    <input type="text" class="form-control" id="MobileInput" name="Mobile" placeholder="Enter your mobile phone number">
+                </div>
+                <div class="form-group offset-md-5 offset-sm-5">
+                    <button type="submit" class="btn btn-primary" name="Submit">Register</button>
+                </div>
+          </form>
+    </div>
+</div>
+ 
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="scripts/jsscripts.js"></script>
+  </body>
+</html> 
